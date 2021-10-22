@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Контактирајте нас путем друштвених мрежа, имејла или нас позовите и поручите домаћи крем сир.">
+    <link rel="shortcut icon" href="fotografije/logo.png">
+    <link rel="icon" href="fotografije/logosvg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="fotografije/logo-apple.png">
+    <meta property="og:title" content='Радионица сира "Кајсија" - Контакт'>
+    <meta property="og:description" content="Контактирајте нас путем веб-сајта или друштвених мрежа и наручите домаћи крем сир.">
+    <meta property="og:locale" content="sr" />
+    <meta property="og:image" content="https://scontent.fbeg10-1.fna.fbcdn.net/v/t1.6435-9/192484901_329034068831642_3418443154672399235_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Pi73HCCvnHEAX_gjlek&_nc_ht=scontent.fbeg10-1.fna&oh=a6664f4c90fd8c6954f2358de558bf58&oe=60CE73C0">
+    <meta property="og:url" content="o-nama.html">
+    <meta name="twitter:title" content='Радионица сира "Кајсија" - Контакт'>
+    <meta name="twitter:description" content="Контактирајте нас путем веб-сајта или друштвених мрежа и наручите домаћи крем сир.">
+    <meta name="twitter:image" content="https://scontent.fbeg10-1.fna.fbcdn.net/v/t1.6435-9/192484901_329034068831642_3418443154672399235_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Pi73HCCvnHEAX_gjlek&_nc_ht=scontent.fbeg10-1.fna&oh=a6664f4c90fd8c6954f2358de558bf58&oe=60CE73C0">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Радионица сира "Кајсија" | Контакт</title>
+</head>
+
+<body id="kontakt-body">
+
+    <!-- Navigacija -->
+
+    <header>
+        <nav class="wrapper">
+            <a href="index.html">
+                <h1>Radionica sira Kajsija</h1><img src="fotografije/logo.svg" alt="logo" width="40" height="40">
+            </a>
+            <div id="myNav" class="overlay navbar">
+                <button class="closebtn" onclick="closeNav()" aria-label="Zatvorite navigaciju">
+                    <span class="close"></span>
+                </button>
+                <ul class="overlay-content">
+                    <li><a href="index.html">Почетна</a></li>
+                    <li><a href="o-nama.html">О нама</a></li>
+                    <li><a href="proizvodi.html">Производи</a></li>
+                    <li><a href="kontakt.html" id="curent-link">Контакт</a></li>
+                </ul>
+            </div>
+            <button onclick="openNav()" aria-label="Otvorite navigaciju">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+        </nav>
+    </header>
+    <h2 id="h-main">Контакт</h2>
+
+    <main class="wrapper" id="contact-wrapper">
+
+
+        <!-- Form -->
+
+        <div class="contact-form">
+            <p>Питајте нас и ми ћемо Вам одговорити у најкраћем року!</p>
+            <div class="form-container">
+                <form action="active.php" method="GET">
+                    <div class="input-box">
+                        <label for="ime">Име</label>
+                        <input type="text" id="ime" name="ime" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Имејл адреса</label>
+                        <input type="email" id="email" name="imejl" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="subject">Порука</label>
+                        <textarea itemid="subject" name="poruka" id="subject" required></textarea>
+                    </div>
+                    <input type="submit" value="Пошаљи" role="button">
+                </form>
+            </div>
+        </div>
+
+        <!-- Društvene mreže -->
+
+        <div class="kontakt-wrapper">
+
+            <div class="drustvene-mreze">
+                <p>Контактирајте нас путем друштвених мрежа</p>
+                <div class="drustvene-mreze-ikonice">
+                    <a title="Facebook" href="https://www.facebook.com/rskajsija" target="_blank">
+                        <span>Фејсбук страница</span>
+                        <img src="fotografije/facebook.png" alt="facebook-icon">
+                    </a>
+                    <a title="Instagram" href="https://www.instagram.com/radionicasira_kajsija/" target="_blank">
+                        <span>Инстаграм страница</span>
+                        <img src="fotografije/instagram.png" alt="instagram-icon">
+                    </a>
+                    <a title="Viber" href="viber://contact?number=%2B381616896412" target="_blank">
+                        <span>Вибер контакт чет</span>
+                        <img src="fotografije/viber.png" alt="viber-icon">
+                    </a>
+                    <a title="WhatsApp" href="https://api.whatsapp.com/send?phone=+381616896412" target="_blank">
+                        <span>Вацап контакт чет</span>
+                        <img src="fotografije/whatsapp.png" alt="WhatsApp-icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Brojevi telefona -->
+
+            <div class="phone-numbers">
+                <p>Или нас позовите</p>
+                <div class="brojevi">
+                    <div class="broj">
+                        <a href="tel:+38162683955">
+                            <span>Ivanin broj telefona</span>
+                            <img src="fotografije/tel.png" alt="mobile-icon">
+                        </a>
+                        <div class="broj-text">
+                            <p>Ивана</p>
+                            <p>062 683 955</p>
+                        </div>
+                    </div>
+                    <div class="broj">
+                        <a href="tel:+381616896412">
+                            <span>Dejanov broj telefona</span>
+                            <img src="fotografije/tel.png" alt="mobile-icon">
+                        </a>
+                        <div class="broj-text">
+                            <p>Дејан</p>
+                            <p>061 689 6412</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="kontakt-footer">
+        <div class="site-map wrapper">
+            <div class="site-map-links">
+                <div class="site-map-o-nama">
+                    <a href="o-nama.html#cime-se-bavimo">Чиме се бавимо</a>
+                    <a href="o-nama.html#gde-se-nalazimo">Где се налазимо</a>
+                    <a href="o-nama.html#videos">Завирите у наше имање</a>
+                    <a href="proizvodi.html#kako-se-pravi">Како се прави сир</a>
+                </div>
+                <div class="site-map-proizvodi">
+                    <a href="proizvodi.html#slani-sirevi">Слани крем сиреви</a>
+                    <a href="proizvodi.html#slatki-sirevi">Слатки крем сиреви</a>
+                    <a href="proizvodi.html#klasik-sir">“Класик” крем сир</a>
+                    <a href="index.html#utisci">Утисци купаца</a>
+                </div>
+            </div>
+        </div>
+        <p class="lower-footer">Radionica sira "Kajsija" &#169; 2021, all rights reserved.Designed by Tijana.</p>
+    </footer>
+    
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1322 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto/Roboto-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto/Roboto-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto/Roboto-Italic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark-blue: #092C4C;
+    --medium-blue: #3C5A89;
+    --very-light-blue: rgba(60,90,137,0.64);
+    --dark-orange: #DB9A62;
+    --medium-orange: #FFA163;
+    --light-orange: #F9C341;
+    --dark-green: #2A6054;
+    --very-dark-gray: #333333;
+    --dark-gray: #4F4F4F;  
+}
+
+/* OPŠTE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+html, body {
+    min-height: 100vh;
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: var(--light-orange);
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 3.12rem;
+    color: var(--dark-blue);
+}
+
+.h-left {
+    text-align: left;
+}
+
+#h-main {
+    margin-top: 3.12rem;
+}
+
+h2 span {
+    background-image: linear-gradient(120deg, #ffa16391 0%, #ffa163ce 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.4em;
+    background-position: 0 88%;
+}
+
+.wrapper {
+    padding: 0 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#curent-link {
+    color: var(--medium-orange);
+}
+
+#scrollBtn {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 48px;
+    height: 48px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    position: fixed;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid var(--white);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+}
+
+/* POCETNA STRANICA */
+
+/* Header */
+
+h1 {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 3.75rem;
+    border-color: var(--white);
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.08);
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+header button {
+    width: 3rem;
+    height: 100%;
+    max-height: 4rem;
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 2rem;
+    height: 0.2rem;
+    margin: 0.31rem auto;   
+    background-color: var(--black);
+}
+
+.overlay button {
+    align-self: flex-end;
+    margin: 0.5rem 1rem;
+}
+
+.close::before, .close::after {
+    content: '';
+    display: inline-block;
+    width: 0.2rem;
+    height: 2.5rem;
+    background-color: var(--black);
+}
+.close::before {
+    transform: rotate(45deg);
+}
+.close::after {
+    transform: rotate(-45deg);
+}
+.overlay {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--white);
+    transition: 0.3s ;
+    z-index: 100;
+}
+
+.overlay-content {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay-content li {
+    margin: 1.5rem;
+}
+
+.overlay-content li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.2rem;
+    color: var(--black);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.overlay-content li a:hover {
+    box-shadow: inset 0px -2px 0 0 var(--medium-orange);
+}
+
+
+/* Hero section */
+
+.hero-section {
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero-section p {
+    font-size: 2.5rem;
+    line-height: 3.875rem;
+    font-weight: bold;
+    color: var(--medium-blue);
+    position: relative;
+}
+
+.hero-section img {
+    max-width: 95%;
+}
+
+/* Upoznajte radionicu */
+
+.after-hero-section {
+    background-color: var(--medium-blue);
+}
+
+.wave-up {
+    margin-top: -1rem;
+    width: 100vw;
+}
+
+.wave-down {
+    width: 100vw;
+    position: absolute;
+    margin-top: -0.2rem;
+}
+
+.after-hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4.37rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.after-hero-content h2 {
+    color: var(--white);
+}
+
+.after-hero-content p {
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white);
+    opacity: 0.87;
+}
+
+.after-hero-content img {
+    display: none;
+}
+
+.button {
+    margin-top: 3.17rem;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    background-color: var(--medium-orange);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 25px;
+    color: var(--very-dark-gray);
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--light-orange);
+    color: var(--dark-gray);
+}
+
+
+/* Krem sirevi */
+
+.krem-sirevi {
+    margin-top: 8.125rem;
+    margin-bottom: 5.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-container {
+    margin: 4.375rem auto;
+}
+
+
+.krem-sirevi h2 {
+    margin-bottom: 0;
+    color: var(--dark-blue);
+}
+
+.krem-sirevi p {
+    text-align: center;
+}
+
+.krem-sirevi img {
+    width: 100%;
+    min-width: 200px;
+    border-radius: 0.4rem ;
+}
+
+.slide p, .slide2 p {
+    margin-top: 1.5rem;
+}
+
+.krem-sirevi .button {
+    margin: 0;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    justify-self: flex-end;
+}
+
+.krem-sirevi .button:hover {
+    background-color: var(--medium-orange);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--white);
+    user-select: none;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+ 
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Cow section */
+
+.cow-section {
+    padding-top: 3.875rem;
+    padding-bottom: 8.25rem;
+    background-color: rgba(255, 161, 99, 0.7);
+}
+
+.cow-section h2 {
+    margin-bottom: 4.375rem;
+    color: var(--dark-blue);
+}
+
+.cow-card-wrapper {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cow-card{
+    max-width: 740px;
+    margin-bottom: 1.875rem;
+    padding: 1.56rem 1.875rem;
+    border-radius: 0.625rem;
+    background-color: var(--white);
+    box-shadow: 2px 7px 14px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cow {
+    text-align: center;
+}
+
+.cow h4 {
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+    color: var(--dark-blue);
+}
+
+.cow-card p {
+    margin-top: .5rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+    opacity: 87%;
+}
+
+.cow-card p:first-of-type {
+    margin-top: 1.2rem;
+}
+
+/* Utisci kupaca */
+
+.comments {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.comments h2 {
+    color: var(--dark-green);
+}
+
+.comments h2 span {
+    background-image: linear-gradient(120deg, rgba(249, 195, 65, 0.51) 0%, rgba(249, 195, 65, 0.51) 100%);
+}
+
+.comments-img {
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.comments-img::-webkit-scrollbar {
+    display: none;
+}
+
+.comments img {
+    margin-right: 1rem;
+    width: 300px;
+    height: max-content;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 3.3rem;
+    padding-bottom: 3.3rem;
+    font-weight: 500;
+    background-color: var(--medium-blue);
+}
+
+footer a {
+    margin-bottom: 0.875rem;
+    font-size: 0.875rem;
+    color: var(--white);
+}
+
+.site-map {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-map-links {
+    display: flex;
+}
+
+.site-map-o-nama, .site-map-proizvodi {
+    margin-bottom: 3rem;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact-info img, .footer-contact-info p {
+    margin-right: 0.75rem;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media img {
+    height: 1.5rem;
+}
+
+.lower-footer {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: var(--white);
+    text-align: center;
+}
+
+/* O NAMA STRANICA */
+
+    .cime-se-bavimo p, .gde-se-nalazimo p, .zasto-kajsija p {
+        margin-bottom: 1.5rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+        color: var(--dark-blue);
+        opacity: 0.87;
+    }
+
+    .line {
+        width: 90%;
+        max-width: 1380px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: var(--dark-gray);
+        opacity: 0.7;
+    }
+ 
+    /* Čime se bavimo */
+    
+    .cime-se-bavimo {
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cime-se-bavimo-text {
+        max-width: 636px;
+    }
+    
+    .cime-se-bavimo p span {
+        background: linear-gradient(120deg, #f9c2416c 0%, #f9c24180 100%)
+    }
+
+    /* Gde se nalazimo */
+
+    .gde-se-nalazimo {
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gde-se-nalazimo-text {
+        max-width: 636px;
+    }
+
+    /* Zbog čega Kajsija */
+
+    .zasto-kajsija {
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zasto-kajsija-text {
+        max-width: 636px;
+    }
+
+    /* Nagrada */
+
+    .nagrada-container {
+        width: 100%;
+        padding: 3.5rem 1rem;
+        background-color: var(--very-light-blue);
+        font-size: 1.5rem;
+        font-style: italic;
+        line-height: 1.75rem;
+        text-align: center;
+        color: var(--white);
+    }
+    .nagrada-container p {
+        margin: 0 auto;
+        max-width: 924px;
+    }
+
+    /* Zavirite u imanje */
+
+    .video-section {
+        margin: 5rem auto;
+    }
+
+    .videos {
+        max-height: 605px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .video-section iframe {
+        width: 344px;
+        height: 180px;
+        margin-top: 1rem;
+        margin-right: 0.2rem;
+        border: none;
+        overflow: hidden;
+    }
+    
+
+/* PROIZVODI STRANICA */
+
+
+/* Opis */
+
+.description {
+    width: 100%;
+    padding: 5rem 1rem;
+    background-color: var(--dark-green);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.description p {
+    max-width: 940px;
+}
+
+.description p span {
+    color: var(--medium-orange);
+}
+
+/* Krem sirevi */
+
+.ks-proizvodi {
+    margin: 5rem auto !important;
+}
+
+.ks-proizvodi-container {
+    margin: 0 !important;
+}
+
+.slide2 {
+    margin-bottom: 0 !important;
+}
+
+
+/* Klasik krem sir */
+
+.klasik-sir {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--dark-blue);
+}
+
+.klasik-sir .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.klasik-sir-text h2 {
+    color: var(--medium-orange);
+}
+
+.klasik-sir-text {
+    margin-bottom: 2.5rem;
+    max-width: 630px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--white);
+}
+
+.klasik-sir img {
+    max-width: 100%;
+}
+
+/* Dezerti */
+
+.dezerti {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dezerti-images {
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.dezerti-images::-webkit-scrollbar {
+    display: none;
+}
+
+.dezerti-images img {
+    margin: 1rem;
+}
+
+/* Kako se pravi sir */
+
+.kako-se-pravi-container {
+    margin-bottom: 7.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--dark-green);
+}
+
+.kako-se-pravi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.kako-se-pravi-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.kako-se-pravi h2 {
+    color: var(--white);
+}
+
+.kako-se-pravi-text {
+    max-width: 612px;
+    color: var(--white);
+}
+
+.kako-se-pravi-text p:nth-child(1) {
+    margin-top: 3rem;
+}
+
+.kako-se-pravi-text p:nth-child(2) {
+    margin-top: 1.25rem;
+}
+
+.kako-se-pravi iframe {
+    max-width: 100%;
+    border: none;
+}
+
+
+/* KONTAKT STRANICA */
+
+#kontakt-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form */
+
+.contact-form {
+    max-width: 613px;
+    margin-bottom: 3.75rem;
+    padding: 3.125rem 1.75rem;
+    border-radius: 0.625rem;
+    background-color: var(--dark-blue);
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.contact-form p {
+    text-align: center;
+}
+
+.form-container {
+    margin-top: 1.5rem;
+}
+
+.input-box {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    margin-bottom: 0.2rem;
+    font-size: 0.875rem;
+}
+
+.input-box input {
+    max-width: 233px;
+    height: 3rem;
+    padding: 1rem;
+    border: 2px solid var(--light-orange);
+    border-radius: 0.625rem;
+    font-size: 1.2rem;
+    color: var(--very-dark-gray);
+}
+
+textarea {
+    min-width: 233px;
+    max-width: 363px;
+    height: 5.5rem;
+    padding: 0.5rem;
+    border: 2px solid var(--light-orange);
+    border-radius: 0.625rem;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: var(--very-dark-gray);
+}
+
+input[type="submit"] {
+    width: 11rem;
+    height: 2.75rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: var(--medium-orange);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--very-dark-gray);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    box-shadow: var(--dark-orange) 0px 0px 30px;
+}
+
+/* Društvene mreže */
+
+.drustvene-mreze {
+    width: 100%;
+    max-width: 613px;
+    max-height: 616px;
+    margin-bottom: 3.75rem;
+    padding: 2rem 1rem;
+    border-radius: 0.625rem;
+    background-color: var(--medium-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.drustvene-mreze p {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.drustvene-mreze-ikonice {
+    min-width: 60%;
+    max-width: 380px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.drustvene-mreze-ikonice span {
+    display: none;
+}
+
+.drustvene-mreze-ikonice a {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--medium-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drustvene-mreze-ikonice a:last-of-type {
+    margin-right: 0;
+}
+
+/* Brojevi telefona */
+
+.phone-numbers {
+    width: 100%;
+    max-width: 613px;
+    max-height: 616px;
+    margin-bottom: 3.75rem;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.625rem;
+    background-color: var(--medium-orange);
+    color: var(--white);
+}
+
+.phone-numbers>p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.brojevi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.broj span {
+    display: none;
+}
+
+.broj {
+    display: flex;
+    min-width: 170px;
+}
+
+.broj:first-child {
+    margin-bottom: 1.625rem;
+}
+
+.broj a {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+
+#kontakt-footer {
+    margin-top: auto;
+}
+
+
+@media only screen and (max-width:768px) {
+
+    /* POCETNA - Krem sirevi */
+    
+    
+    .slide-container {
+        margin: 0;
+        min-height: 340px;
+        width: 100%;
+        position: relative; 
+    }
+    
+    .slide-container-pocetna {
+        min-height: 450px;
+    }
+
+    .slide, .slide2 {
+        margin-top: 6rem;
+        margin-bottom: 3.125rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media only screen and (min-width:769px) {
+
+    .slide-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1440px;
+        margin: 5rem auto !important;
+    }
+
+    .krem-sirevi {
+        margin-top: 10rem;
+    }
+
+    .krem-sirevi img {
+        margin-right: 1rem;
+    }
+    
+    .slide, .slide2 {
+        text-align: center;
+    }
+
+    .prev, .next {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    
+    /* POCETNA STRANICA */
+
+    /* Navigacija */
+    
+    header button,header button span, .hamburger span {
+        display: none;
+    }
+    
+    .navbar {
+        position: relative;
+        height: 100%;
+    }
+
+    .overlay-content {
+        position: absolute;
+        right: 0;
+        width: 465px;
+        padding: 1.2rem 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .overlay-content li {
+        margin: 0.1rem;
+    }
+
+    .overlay-content li a{
+        font-size: 1rem;
+    }
+
+    /* Hero section */
+
+    .hero-section {
+        margin-bottom: 0;
+        align-items: center;
+    }
+    
+    /* Upoznajte radionicu */
+
+    .after-hero-content img {
+        display: block;
+        max-width: 30%;
+        height: auto;
+    }
+
+    .after-hero-content {
+        padding: 4.37rem 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Sekcija o kravama */
+
+    .cow-card {
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    /* Utisci kupaca */
+
+    .comments-img {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .comments-img img {
+        margin-right: 0;
+    }
+
+    /* O NAMA STRANICA */
+
+    .video-section iframe {
+        width: 506px;
+        height: 280px;
+    }
+
+    /* PROIZVODI */
+
+    #slani-sirevi img, #slatki-sirevi img {
+        width: 95%;
+    }
+
+    /* KONTAKT STRANICA */
+
+    .brojevi {
+        justify-content: space-around;
+    }
+
+    .broj a{
+        margin-right: 1rem;
+    }
+
+}
+
+@media only screen and (min-width:1024px) { 
+
+    /* POCETNA STRANICA */
+
+    /* Upoznajte radionicu */
+
+    .after-hero-text {
+        padding-bottom: 1rem;
+    }
+
+    /* Utisci kupaca */
+
+    .comments-img img {
+        max-width: 25%;
+    }
+
+    /* Footer */
+
+    .site-map-o-nama, .site-map-proizvodi, .footer-contact {
+        margin-right: 7rem;
+    }
+    
+
+    /* PROIZVODI */
+
+    /* Klasik krem sir */
+
+    .klasik-sir {
+        padding: 2.5rem 1rem;
+    }
+
+    .klasik-sir .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .klasik-sir-text h2 {
+        text-align: left;
+    }
+
+    /* Kako se pravi sir */
+
+    .kako-se-pravi-content {
+        margin-top: 2rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .kako-se-pravi iframe {
+        min-width: 560px;
+        min-height: 315px;
+    }
+
+    .kako-se-pravi-text {
+        margin-left: 1rem;
+    }
+
+    .kako-se-pravi-text p:nth-child(1) {
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+
+    /* POCETNA STRANICA */
+
+    /* Upoznajte radionicu */
+
+    .after-hero-content {
+        max-width: 1440px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .after-hero-text {
+        margin: 0;
+    }
+
+    /* O NAMA STRANICA */
+
+    /* Čime se bavimo */
+
+    .cime-se-bavimo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Gde se nalazimo */
+
+    .gde-se-nalazimo {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .gde-se-nalazimo p {
+        max-width: 495px;
+    }
+
+    /* Zašto Kajsija */
+
+    .zasto-kajsija {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* PROIZVODI */
+
+    /* Slatki i slani sirevi */
+
+    #slani-sirevi img, #slatki-sirevi img {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width:1440px) {
+
+    /* POCETNA STRANICA */
+
+    /* Hero section */
+
+    .hero-text {
+        margin-right: 6rem;
+        margin-bottom: 0;
+    }
+
+    .hero-img {
+        margin-left: 6rem;
+    }
+
+    /* Upoznajte radionicu */
+
+    .after-hero-content img {
+        margin-right: 1.6rem;
+    }
+
+    /* Krem sirevi */
+
+    .krem-sirevi {
+        margin-top: 13rem;
+    }
+
+    /* Sekcija o kravama */
+
+    .cow-card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cow-section {
+        padding-bottom: 5rem;
+    }
+
+    .cow-card {
+        max-width: 48%; 
+        height: 285px;       
+    }
+
+    .cow-card:nth-of-type(2) {
+        padding-top: 1.4rem;
+        padding-bottom: 1rem;
+    }
+
+    .cow-card p {
+        margin-left: 2.5rem;
+    }
+
+    .cow-card p:first-of-type {
+        margin-top: 0;
+    }
+
+    /* KONTAKT STRANICA */
+
+    #contact-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-form {
+        margin-right: 6rem;
+        width: 50%;
+        min-width: 600px;
+    }
+
+    .kontakt-wrapper {
+        width: 50%;
+    }
+  
+}
+
+@media only screen and (min-width:1920px) {
+
+    /* POCETNA STRANICA */
+
+    /* Krem sirevi */
+
+    .krem-sirevi {
+        margin-top: 17rem;
+    }
+}

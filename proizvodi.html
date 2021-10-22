@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="У понуди су домаћи слани и слатки крем сиреви произведени на традиционалан начин без адитива, конзерванса и вештачких боја. Сиреви могу да се секу на кришке, али и да се мажу на хлеб, као и да буду главни састојак у разноврсним јелима, од кифлица, па до торта и колача." />
+  <link rel="shortcut icon" href="fotografije/logo.png" />
+  <link rel="icon" href="fotografije/logosvg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="fotografije/logo-apple.png">
+  <meta property="og:title" content='Радионица сира "Кајсија" - Производи'>
+  <meta property="og:description" content="Радионица домаћих крем сирева са традицијом дугом 40 година.">
+  <meta property="og:locale" content="sr" />
+  <meta property="og:image"
+    content="https://scontent.fbeg10-1.fna.fbcdn.net/v/t1.6435-9/192484901_329034068831642_3418443154672399235_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Pi73HCCvnHEAX_gjlek&_nc_ht=scontent.fbeg10-1.fna&oh=a6664f4c90fd8c6954f2358de558bf58&oe=60CE73C0">
+  <meta property="og:url" content="o-nama.html">
+  <meta name="twitter:title" content='Радионица сира "Кајсија" - Производи'>
+  <meta name="twitter:description" content="Радионица домаћих крем сирева са традицијом дугом 40 година.">
+  <meta name="twitter:image"
+    content="https://scontent.fbeg10-1.fna.fbcdn.net/v/t1.6435-9/192484901_329034068831642_3418443154672399235_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Pi73HCCvnHEAX_gjlek&_nc_ht=scontent.fbeg10-1.fna&oh=a6664f4c90fd8c6954f2358de558bf58&oe=60CE73C0">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Домаћи крем сиреви | Радионица сира "Кајсија"</title>
+</head>
+
+<body>
+  <!-- Navigacija -->
+
+  <header>
+    <nav class="wrapper">
+      <a href="index.html">
+        <h1>Radionica sira Kajsija</h1>
+        <img src="fotografije/logo.svg" alt="logo" width="40" height="40" />
+      </a>
+      <div id="myNav" class="overlay navbar">
+        <button class="closebtn" onclick="closeNav()" aria-label="Zatvorite navigaciju">
+          <span class="close"></span>
+        </button>
+        <ul class="overlay-content">
+          <li><a href="index.html">Почетна</a></li>
+          <li><a href="o-nama.html">О нама</a></li>
+          <li><a href="proizvodi.html" id="curent-link">Производи</a></li>
+          <li><a href="kontakt.html">Контакт</a></li>
+        </ul>
+      </div>
+      <button onclick="openNav()" aria-label="Otvorite navigaciju">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <h2 id="h-main">Производи</h2>
+
+    <!-- Opis proizvoda -->
+
+    <div class="description">
+      <p class="wrapper">
+        Крем сир не садржи никакве адитиве, вештачке боје, конзервансе, па
+        је с тога идеалан за бебе, маме, тате, баке и деке. Незамењив је део сваког доручка и школараца и радника, и сви га могу конзумирати у
+        неограниченим количинама. Да је потпуно природан говори и његов кратак рок трајања, па чак и у фрижидеру.
+      </p>
+    </div>
+
+    <!-- Slani krem sirevi -->
+
+    <div class="krem-sirevi wrapper ks-proizvodi" id="slani-sirevi">
+      <div class="krem-sirevi-text">
+        <h2><span>Слани крем сиреви</span></h2>
+      </div>
+      <div class="slide-container ks-proizvodi-container">
+        <div class="slide2 fade slide_1">
+          <img src="fotografije/proizvodi-sir-bosiljak.jpg" alt="Krem sir sa bosiljkom" />
+          <p>Босиљак</p>
+        </div>
+        <div class="slide2 fade slide_1">
+          <img src="fotografije/proizvodi-sir-paprika.jpg" alt="Krem sir sa paprikom" />
+          <p>Паприка</p>
+        </div>
+        <div class="slide2 fade slide_1">
+          <img src="fotografije/proizvodi-sir-susam.jpg" alt="Krem sir sa susamom" />
+          <p>Сусам</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1,'slide_1')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slide_1')">&#10095;</a>
+      </div>
+    </div>
+
+    <!-- Slatki krem sirevi -->
+
+    <div class="krem-sirevi ks-proizvodi wrapper" id="slatki-sirevi">
+      <div class="krem-sirevi-text">
+        <h2><span>Слатки крем сиреви</span></h2>
+      </div>
+      <div class="slide-container">
+        <div class="slide2 fade slide_2">
+          <img src="fotografije/proizvodi-sir-malina.jpg" alt="Krem sir sa malinom" />
+          <p>Малина</p>
+        </div>
+        <div class="slide2 fade slide_2">
+          <img src="fotografije/proizvodi-sir-borovnica.jpg" alt="Krem sir sa borovnicom" />
+          <p>Боровница</p>
+        </div>
+        <div class="slide2 fade slide_2">
+          <img src="fotografije/proizvodi-sir-kajsija.jpg" alt="Krem sir sa kajsijom" />
+          <p>Кајсија</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 'slide_2')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slide_2')">&#10095;</a>
+      </div>
+    </div>
+
+    <!-- Klasik krem sir -->
+
+    <div class="klasik-sir" id="klasik-sir">
+      <div class="wrapper">
+        <div class="klasik-sir-text">
+          <h2>“Класик” крем сир</h2>
+          <p>
+            Ако волите да време проводите у кухињи, сигурно ћете наћи заједнички језик са нашим Класик крем сиром. Он је незамењиви крем
+            сир за Чизкејк, али и за Тирамису, разне салате, кифлице, пите и све оно што волите да једете баш са сиром. Будите сигурни да ће
+            Класик Вашим колачима засигурно дати они фину ноту киселкастог укуса у изобиљу слатке чоколаде.
+          </p>
+        </div>
+        <img src="fotografije/proizvodi-sir-klasik.jpg" alt="Klasik krem sir" />
+      </div>
+    </div>
+
+    <!-- Dezerti -->
+
+    <div class="dezerti wrapper">
+      <h2>Дезерти од крем сирева</h2>
+      <div class="dezerti-images">
+        <img src="fotografije/dezert01.jpg" alt="Dezert napravljen od krem sira" />
+        <img src="fotografije/dezert02.jpg" alt="Dezert napravljen od krem sira" />
+        <img src="fotografije/dezert03.jpg" alt="Dezert napravljen od krem sira" />
+      </div>
+    </div>
+
+    <!-- Kako se pravi sir -->
+
+    <div class="kako-se-pravi-container" id="kako-se-pravi">
+      <div class="kako-se-pravi wrapper">
+        <h2><span>Како се прави сир?</span></h2>
+        <div class="kako-se-pravi-content">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/o4SFz2unruU?start=146"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <div class="kako-se-pravi-text">
+            <p>
+              Трудимо се да наш крем сир правимо са пуно труда и пажње, тако да у његов састав не улази ништа друго осим: свежег млека са
+              наше фарме, мало соли и сирила и пуно љубави.
+            </p>
+            <p>
+              Контрола квалитета готовог производа је такође под строгим “HCCP” стандардом, који Вам гарантује да су наши производи
+              рађени у строго контролисаним условимa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="site-map wrapper">
+      <div class="site-map-links">
+        <div class="site-map-o-nama">
+          <a href="o-nama.html#cime-se-bavimo">Чиме се бавимо</a>
+          <a href="o-nama.html#gde-se-nalazimo">Где се налазимо</a>
+          <a href="o-nama.html#videos">Завирите у наше имање</a>
+          <a href="#kako-se-pravi">Како се прави сир</a>
+        </div>
+        <div class="site-map-proizvodi">
+          <a href="#slani-sirevi">Слани крем сиреви</a>
+          <a href="#slatki-sirevi">Слатки крем сиреви</a>
+          <a href="#klasik-sir">“Класик” крем сир</a>
+          <a href="index.html#utisci">Утисци купаца</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:+38162683955" class="footer-contact-info">
+          <img src="fotografije/tel.png" alt="mobile-icon" />
+          <p>Ивана</p>
+          <p>062 683 955</p>
+        </a>
+        <a href="tel:+381616896412" class="footer-contact-info">
+          <img src="fotografije/tel.png" alt="mobile-icon" />
+          <p>Дејан</p>
+          <p>061 689 6412</p>
+        </a>
+        <div class="social-media">
+          <a href="https://www.facebook.com/rskajsija" class="footer-contact-info">
+            <img src="fotografije/facebook.png" alt="social-icon" />
+            <p>Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/radionicasira_kajsija/" class="footer-contact-info">
+            <img src="fotografije/instagram.png" alt="social-icon" />
+            <p>Instagram</p>
+          </a>
+        </div>
+        <a href="mailto:radionicasirakajsija@gmail.com" class="footer-contact-info">
+          <img src="fotografije/mail.png" alt="email-icon" />
+          <p>radionicasirakajsija@gmail.com</p>
+        </a>
+      </div>
+    </div>
+    <p class="lower-footer">
+      Radionica sira "Kajsija" &#169; 2021, all rights reserved.Designed by Tijana.
+    </p>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollBtn" title="Иди на почетак"><i class="arrow"></i></button>
+  <script src="js/proizvodi.js"></script>
+</body>
+
+</html>
