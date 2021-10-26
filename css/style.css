@@ -896,6 +896,10 @@ input[type="submit"]:hover {
     justify-content: space-around;
 }
 
+.drustvene-mreze-ikonice a:hover {
+    box-shadow: var(--dark-orange) 0px 0px 10px;;
+}
+
 .drustvene-mreze-ikonice span {
     display: none;
 }
@@ -965,6 +969,9 @@ input[type="submit"]:hover {
     align-items: center;
 }
 
+.broj a:hover {
+    box-shadow: var(--dark-gray) 0 0 10px;
+}
 /* Footer */
 
 #kontakt-footer {
