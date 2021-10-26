@@ -1349,3 +1349,44 @@ input[type="submit"]:hover {
         margin-top: 17rem;
     }
 }
+
+
+/* 404 stranica */
+
+.error-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.error-page-container img{
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.error-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error-page-content p {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.error-page-content a {
+    background-color: var(--light-orange);
+    color: var(--very-dark-gray);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.5rem;  
+}
+
+.error-page-content a:hover {
+    box-shadow: var(--light-orange) 0 0 20px;
+}
