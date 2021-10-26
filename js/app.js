@@ -11,7 +11,7 @@ function closeNav() {
 
 // Pocetna - Image slider
 
-const mediaQuery = window.matchMedia('(max-width: 768px)');
+var mediaQuery = window.matchMedia('(max-width: 768px)');
 
 var slideIndex = 1;
 
@@ -30,6 +30,7 @@ function currentSlide(n) {
 
 function showSlides(n, className) {
   var i;
+
   var slides = document.getElementsByClassName(className);
   if (slides && mediaQuery.matches) {
     if (n > slides.length) { slideIndex = 1 }
@@ -38,6 +39,7 @@ function showSlides(n, className) {
       slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
+
   }
 
 

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="sr/RS">
+<html lang="sr">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-            name="description"
-            content="Упознајте радионицу сира у којој се дневно преради више од 100 литара млека и у којој се производе ретке врсте крем сирева на тржишту Србије."
-    />
-    <link
-            rel="shortcut icon"
-            href="fotografije/logo.svg"
-            width="48px"
-            height="48px"
-    />
+    <meta name="description" content="Упознајте радионицу сира у којој се дневно преради више од 100 литара млека и у којој се производе ретке врсте крем сирева на тржишту Србије."/>
+    <link rel="shortcut icon" href="fotografije/logo.svg" width="48px"height="48px" />
+    <link rel="icon" href="fotografije/logosvg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="fotografije/logo-apple.png">
+    <meta property="og:title" content='Радионица сира "Кајсија" - О нама'>
+    <meta property="og:description" content="Упознајте породицу која дуже од 40 година производи сир на обронцима Повлена.">
+    <meta property="og:locale" content="sr" />
+    <meta property="og:image" content=""> <!--Dodati link ka fotografiji za soc.medije-->
+    <meta property="og:url" content="o-nama.html">
+    <meta name="twitter:title" content='Радионица сира "Кајсија" - Контакт'>
+    <meta name="twitter:description" content="Упознајте породицу која дуже од 40 година производи сир на обронцима Повлена.">
+    <meta name="twitter:image" content=""> <!--Dodati link ka fotografiji za soc.medije-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#FFA163">
     <link rel="stylesheet" href="css/style.css" />
     <title>
         Упознајте се са радионицом домаћег сира | Радионица сира "Кајсија""
@@ -30,20 +35,20 @@
             /></a>
         <div id="myNav" class="overlay navbar">
             <button
-                    href="javascript:void(0)"
                     class="closebtn"
                     onclick="closeNav()"
+                    aria-label="Zatvorite navigaciju"
             >
                 <span class="close"></span>
             </button>
             <ul class="overlay-content">
-                <li><a href="/">Почетна</a></li>
+                <li><a href="index.html">Почетна</a></li>
                 <li><a href="o-nama.html" id="curent-link">О нама</a></li>
                 <li><a href="proizvodi.html">Производи</a></li>
                 <li><a href="kontakt.html">Контакт</a></li>
             </ul>
         </div>
-        <button onclick="openNav()">
+        <button onclick="openNav()" aria-label="Otvorite navigaciju">
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -80,11 +85,11 @@
         </div>
         <img
                 srcset="
-            fotografije/o-nama-krava343.png 343w,
-            fotografije/o-nama-krava440.png 440w
+            fotografije/o-nama-krava343.webp 343w,
+            fotografije/o-nama-krava440.webp 440w
           "
                 sizes="(max-width: 760px) 343px,440px"
-                src="fotografije/o-nama-krava440.png"
+                src="fotografije/o-nama-krava440.webp"
                 alt="Krava Stršlja na livadi tokom ispaše"
         />
     </div>
@@ -106,11 +111,11 @@
         </div>
         <img
                 srcset="
-            fotografije/o-nama-selo338.png 338w,
-            fotografije/o-nama-selo548.png 548w
+            fotografije/o-nama-selo338.webp 338w,
+            fotografije/o-nama-selo548.webp 548w
           "
                 sizes="(max-width: 760px) 338px,548px"
-                src="fotografije/o-nama-selo548.png"
+                src="fotografije/o-nama-selo548.webp"
                 alt="Pogled na selo i na farmu"
         />
     </div>
@@ -138,11 +143,11 @@
         </div>
         <img
                 srcset="
-            fotografije/o-nama-kajsija337.png 337w,
-            fotografije/o-nama-kajsija415.png 415w
+            fotografije/o-nama-kajsija337.webp 337w,
+            fotografije/o-nama-kajsija415.webp 415w
           "
                 sizes="(max-width: 760px) 337px,415px"
-                src="fotografije/o-nama-kajsija415.png"
+                src="fotografije/o-nama-kajsija415.webp"
                 alt="Cvetanje kajsije ispred kuće"
         />
     </div>
@@ -210,16 +215,16 @@
     <div class="site-map wrapper">
         <div class="site-map-links">
             <div class="site-map-o-nama">
-                <a href="">Чиме се бавимо</a>
-                <a href="">Где се налазимо</a>
-                <a href="">Завирите у наше имање</a>
-                <a href="">Како се прави сир</a>
+                <a href="#cime-se-bavimo">Чиме се бавимо</a>
+                <a href="gde-se-nalazimo">Где се налазимо</a>
+                <a href="videos">Завирите у наше имање</a>
+                <a href="proizvodi.html#kako-se-pravi">Како се прави сир</a>
             </div>
             <div class="site-map-proizvodi">
-                <a href="">Слани крем сиреви</a>
-                <a href="">Слатки крем сиреви</a>
-                <a href="">“Класик” крем сир</a>
-                <a href="">Утисци купаца</a>
+                <a href="proizvodi.html#slani-sirevi">Слани крем сиреви</a>
+                <a href="proizvodi.html#slatki-sirevi">Слатки крем сиреви</a>
+                <a href="proizvodi.html#klasik-sir">“Класик” крем сир</a>
+                <a href="index.html/#utisci">Утисци купаца</a>
             </div>
         </div>
         <div class="footer-contact">
