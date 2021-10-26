@@ -635,11 +635,10 @@ footer a {
     .video-section iframe, .fb-video,
     .iframe-container {
         width: 344px;
-        height: 180px;
+        max-height: 180px;
         margin-top: 1rem;
         margin-right: 0.2rem;
         border: none;
-        overflow: hidden;
     }
 
     .fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span, .fb_iframe_widget_fluid_desktop iframe {
@@ -1105,20 +1104,18 @@ input[type="submit"]:hover {
 
     /* O NAMA STRANICA */
 
-    .videos {
-        align-items: flex-end;
-    }
+    /* Zavirite u naše imanje */
 
     .fb-video,
     .iframe-container:nth-of-type(1) {
         width: 506px;
-        height: 280px;
+        min-height: 280px ;
     }
 
     .video-section iframe,
     .iframe-container:nth-of-type(2) {
         width: 506px;
-        height: 265px;
+        min-height: 265px;
     }
 
     /* PROIZVODI */
