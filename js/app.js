@@ -41,7 +41,21 @@ function showSlides(n, className) {
     slides[slideIndex - 1].style.display = "block";
 
   }
-
-
 }
 
+// Scroll to top
+
+const scrollToTopButton = document.getElementById('scrollBtn');
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    scrollToTopButton.style.display = 'block'
+  } else {
+    scrollToTopButton.style.display = 'none'
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTo({top: 0, behavior: 'smooth'});
+  document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
+}
