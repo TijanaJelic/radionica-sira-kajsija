@@ -1003,6 +1003,11 @@ input[type="submit"]:hover {
         transform: translateX(-50%);
     }
 
+    
+    .slide_3:not(:first-of-type) {
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width:769px) {
