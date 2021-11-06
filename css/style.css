@@ -440,6 +440,10 @@ header button {
     color: var(--dark-blue);
 }
 
+.cow img {
+    border-radius: 0.4rem;
+}
+
 .cow-card p {
     margin-top: .5rem;
     font-size: 1.1rem;
